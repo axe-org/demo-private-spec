@@ -12,9 +12,9 @@ Pod::Spec.new do |s|
     ss.dependency             "Axe/TabBarController"
     ss.dependency             "Axe/OfflineHtml"
     ss.dependency             "Axe/OfflineReact"
-    ss.dependency             "React/CxxBridge"
-    ss.dependency             "React/RCTText"
-    ss.dependency             "React/RCTNetwork"
+    ss.dependency             "MXReact/CxxBridge"
+    ss.dependency             "MXReact/RCTText"
+    ss.dependency             "MXReact/RCTNetwork"
     # 第三方组件示例
     ss.dependency             "Bugly"
     ss.source_files           = "Ground/**/*.{h,m}"
