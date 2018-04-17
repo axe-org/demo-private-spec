@@ -1,4 +1,3 @@
-require "json"
 Pod::Spec.new do |s|
   s.name                      = "Ground"
   s.version                   = "0.0.1-beta.0"
@@ -24,7 +23,8 @@ Pod::Spec.new do |s|
     ss.subspec "headers" do |sss|
       sss.source_files        = ".axe/Headers/src/*.h" , "Ground/**/*.h"
       # 读取记录数据，动态创建子库
-      headerDirs = JSON.parse(File.read(File.join(__dir__, ".axe/Headers/dir.json")))
+      require "json"
+      headerDirs = File.exist?(".axe/Headers/dir.json") ? JSON.parse(File.read(".axe/Headers/dir.json")) : []
       headerDirs.each do |dir|
          sss.subspec dir do |ssss|
             ssss.source_files = ".axe/Headers/dir/#{dir}/*.h"
