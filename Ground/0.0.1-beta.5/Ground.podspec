@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.license                   = { :type => "MIT"}
   s.author                    = { "luoxianming" => "luoxianmingg@gmail.com" }
   s.ios.deployment_target     = '8.0'
-  s.source                    = { :git => "https://github.com/axe-org/demo-ground.git", :tag => s.version}
+  s.source                    = { :git => "https://git.coding.net/axe-org/demo-ground.git", :tag => s.version}
   s.subspec "source" do |ss|
     #对于源码接入:
     ss.source_files           = "Ground/**/*.{h,m}"
