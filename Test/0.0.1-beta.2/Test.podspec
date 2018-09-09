@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license                   = { :type => "MIT"}
   s.author                    = { "luoxianming" => "luoxianmingg@gmail.com" }
   s.ios.deployment_target     = '8.0'
-  s.source                    = { :git => "https://git.coding.net/axe-org/demo-test.git", :tag => s.version}
+  s.source                    = { :git => "https://gitlab.com/axe-org/demo-test.git", :tag => s.version}
   s.default_subspec           = 'api'
   s.header_dir                = 'Test'
   s.subspec "api" do |ss|
